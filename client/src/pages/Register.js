@@ -51,23 +51,32 @@ const Register = () => {
                     boxShadow="10px 10px 20px #ccc"
                     padding={3}
                     borderRadius={5}
+                    sx={{ backgroundColor: '#5b343b'}}
                 >
                     <Typography
                         variant="h4"
-                        sx={{ textTransform: "uppercase" }}
+                        sx={{ textTransform: "uppercase",
+                        color: ' #dbcebf',
+                    }}
                         padding={3}
                         textAlign="center"
+                        
                     >
                         Register
                     </Typography>
                     <TextField
-                        placeholder="name"
+                        placeholder="name"x
                         value={inputs.name}
                         onChange={handleChange}
                         name="name"
                         margin="normal"
                         type={"text"}
                         required
+                        sx={{ backgroundColor: ' #dbcebf',
+                                borderRadius:'5px',
+                                color: ' #5b343b',
+                    }}
+
                     />
                     <TextField
                         placeholder="email"
@@ -77,6 +86,10 @@ const Register = () => {
                         type={"email"}
                         required
                         onChange={handleChange}
+                        sx={{ backgroundColor: ' #dbcebf',
+                                borderRadius:'5px',
+                                color: ' #5b343b',
+                    }}
                     />
                     <TextField
                         placeholder="password"
@@ -86,11 +99,18 @@ const Register = () => {
                         type={"password"}
                         required
                         onChange={handleChange}
+                        sx={{ backgroundColor: ' #dbcebf',
+                                borderRadius:'5px',
+                                color: ' #5b343b',
+                    }}
                     />
 
                     <Button
                         type="submit"
-                        sx={{ borderRadius: 3, marginTop: 3 }}
+                        sx={{ borderRadius: 3, marginTop: 3,
+                            backgroundColor: '#826963',
+                            '&:hover': {
+                                    backgroundColor: '#5b343b', }}}
                         variant="contained"
                         color="primary"
                     >
@@ -98,7 +118,7 @@ const Register = () => {
                     </Button>
                     <Button
                         onClick={() => navigate("/login")}
-                        sx={{ borderRadius: 3, marginTop: 3 }}
+                        sx={{ borderRadius: 3, marginTop: 3,color: ' #dbcebf' }}
                     >
                         Already Registerd ? Please Login
                     </Button>

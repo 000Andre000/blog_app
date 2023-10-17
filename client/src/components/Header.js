@@ -35,18 +35,20 @@ const Header = () => {
     };
     return (
         <>
-            <AppBar position="sticky">
-                <Toolbar>
-                    <Typography variant="h4">My Blog APP</Typography>
+            <AppBar position="sticky" 
+            sx={{backgroundColor: '#5b343b', color: '#dbcebf',}}>
+                <Toolbar >
+                    <Typography variant="h4">Lit-Corner</Typography>
                     {isLogin && (
                         <Box display={"flex"} marginLeft="auto" marginRight={"auto"}>
                             <Tabs
                                 textColor="inherit"
                                 value={value}
                                 onChange={(e, val) => setValue(val)}
+                                color= ' #dbcebf'
                             >
-                                <Tab label="Blogs" LinkComponent={Link} to="/blogs" />
-                                <Tab label="My Blogs" LinkComponent={Link} to="/my-blogs" />
+                                <Tab color= ' #dbcebf' label="Blogs" LinkComponent={Link} to="/blogs" />
+                                <Tab color= ' #dbcebf' label="My Blogs" LinkComponent={Link} to="/my-blogs" />
                                 <Tab
                                     label="Create Blog"
                                     LinkComponent={Link}
@@ -59,14 +61,14 @@ const Header = () => {
                         {!isLogin && (
                             <>
                                 <Button
-                                    sx={{ margin: 1, color: "white" }}
+                                    sx={{ margin: 1, color: "#dbcebf" }}
                                     LinkComponent={Link}
                                     to="/login"
                                 >
                                     Login
                                 </Button>
                                 <Button
-                                    sx={{ margin: 1, color: "white" }}
+                                    sx={{ margin: 1, color: "#dbcebf" }}
                                     LinkComponent={Link}
                                     to="/register"
                                 >

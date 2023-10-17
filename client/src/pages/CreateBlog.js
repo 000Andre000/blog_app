@@ -49,18 +49,21 @@ const CreateBlog = () => {
                     display="flex"
                     flexDirection={"column"}
                     marginTop="30px"
+                    sx={{backgroundColor: '#5b343b',
+                    color: ' #dbcebf',}}
                 >
                     <Typography
                         variant="h2"
                         textAlign={"center"}
                         fontWeight="bold"
                         padding={3}
-                        color="gray"
+                        color="#C4A99B"
+                        
                     >
                         Create A Pots
                     </Typography>
                     <InputLabel
-                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
+                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold",color: ' #C4A99B'}}
                     >
                         Title
                     </InputLabel>
@@ -70,10 +73,15 @@ const CreateBlog = () => {
                         onChange={handleChange}
                         margin="normal"
                         variant="outlined"
+                        borderRadius='40px'
                         required
+                        sx={{backgroundColor:'#C4A99B',
+                        borderRadius:'40px',
+                        }}
+                        
                     />
                     <InputLabel
-                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
+                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold",color: ' #C4A99B' }}
                     >
                         Description
                     </InputLabel>
@@ -84,9 +92,12 @@ const CreateBlog = () => {
                         margin="normal"
                         variant="outlined"
                         required
+                        sx={{backgroundColor:'#C4A99B',
+                        borderRadius:'40px',
+                        }}
                     />
                     <InputLabel
-                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
+                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold",color: ' #C4A99B' }}
                     >
                         Image URL
                     </InputLabel>
@@ -94,11 +105,15 @@ const CreateBlog = () => {
                         name="image"
                         value={inputs.image}
                         onChange={handleChange}
+                        // paddingBottom="40px"
                         margin="normal"
                         variant="outlined"
                         required
+                        sx={{backgroundColor:'#C4A99B',
+                        borderRadius:'40px',
+                        }}
                     />
-                    <Button type="submit" color="primary" variant="contained">
+                    <Button type="submit" sx={{backgroundColor: ' #826963', }} variant="contained">
                         SUBMIT
                     </Button>
                 </Box>

@@ -29,6 +29,10 @@ const Blogs = () => {
                         image={blog?.image}
                         username={blog?.user?.username}
                         time={blog.createdAt}
+                        sx={{ backgroundColor: ' #5b343b',
+                                borderRadius:'5px',
+                                color: ' #dbcebf',
+                    }}
                     />
                 ))}
         </div>

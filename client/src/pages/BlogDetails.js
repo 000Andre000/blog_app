@@ -68,6 +68,8 @@ const BlogDetails = () => {
                     display="flex"
                     flexDirection={"column"}
                     marginTop="30px"
+                    sx={{backgroundColor: '#5b343b',
+                    color: ' #dbcebf',}}
                 >
                     <Typography
                         variant="h2"
@@ -75,11 +77,12 @@ const BlogDetails = () => {
                         fontWeight="bold"
                         padding={3}
                         color="gray"
+                        sx={{ color: ' #C4A99B',}}
                     >
-                        Update A Pots
+                        Update A Post
                     </Typography>
                     <InputLabel
-                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
+                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" , color: ' #C4A99B'  }}
                     >
                         Title
                     </InputLabel>
@@ -90,9 +93,13 @@ const BlogDetails = () => {
                         margin="normal"
                         variant="outlined"
                         required
+                        sx={{backgroundColor:'#C4A99B',
+                        borderRadius:'40px',
+                        
+            }}
                     />
                     <InputLabel
-                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
+                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" , color: ' #C4A99B' }}
                     >
                         Description
                     </InputLabel>
@@ -103,9 +110,13 @@ const BlogDetails = () => {
                         margin="normal"
                         variant="outlined"
                         required
+                        sx={{backgroundColor:'#C4A99B',
+                        borderRadius:'40px',
+                        
+            }}
                     />
                     <InputLabel
-                        sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
+                       sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" , color: ' #C4A99B' }}
                     >
                         Image URL
                     </InputLabel>
@@ -116,8 +127,13 @@ const BlogDetails = () => {
                         margin="normal"
                         variant="outlined"
                         required
+
+                        sx={{backgroundColor:'#C4A99B',
+                        borderRadius:'40px',
+                        
+            }}
                     />
-                    <Button type="submit" color="warning" variant="contained">
+                    <Button type="submit " sx={{backgroundColor: ' #826963', }}  variant="contained">
                         UPDATE
                     </Button>
                 </Box>

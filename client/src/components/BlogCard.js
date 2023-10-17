@@ -49,6 +49,8 @@ export default function BlogCard({
                 ":hover:": {
                     boxShadow: "10px 10px 20px #ccc",
                 },
+                backgroundColor: '#C4A99B',
+                color: ' #dbcebf',
             }}
         >
             {isUser && (
@@ -62,20 +64,22 @@ export default function BlogCard({
                 </Box>
             )}
             <CardHeader
+                sx={{color:'#452727', fontSize:'20px'}}
                 avatar={
-                    <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                    <Avatar sx={{ bgcolor: '#3A3125' , color:'  ' }} aria-label="recipe">
                         {username}
                     </Avatar>
                 }
+
                 title={username}
                 subheader={time}
             />
             <CardMedia component="img" height="194" image={image} alt="Paella dish" />
             <CardContent>
-                <Typography variant="h6" color="text.secondary">
+                <Typography variant="h6" color="#00917B">
                     Title : {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body1" color="#6C7F6D">
                     Description : {description}
                 </Typography>
             </CardContent>
